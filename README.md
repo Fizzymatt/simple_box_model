@@ -8,6 +8,7 @@ A simple HTML 5 page to demonstrate CSS styling
 2. Navigate to the project root
 3. Open the index.html file in a web browser
 4. Open the code in an editor, and have a play around with the CSS styles (i.e. css/index.css) to see how it affects the page layout
+5. Hover over the boxes, and a tooltip should tell you which element you're looking at (NOTE: Chrome's tooltips seem to be slow)
 
 ## IMPORTANT NOTES
 
