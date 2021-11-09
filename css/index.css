@@ -1,0 +1,74 @@
+/* applies specifically to the body element */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* applies to elements that have a "parent" AND/OR a "child" class */
+.parent, .child {
+  display: flex;
+  align-items: stretch;
+}
+
+/* applies ONLY to elements that have a "parent" class */
+.parent {
+  background-color: #fff;
+  height: 220px;
+  width: 220px;
+  color: #000;
+}
+
+/* applies only to elements that have a "child" class */
+.child {
+  margin: 0 auto; /* created a default margin setting that we can override later on */
+}
+
+/* applies only to elements that have a "grandchild" class */
+.grandchild {
+  background-color: #ffff00;
+}
+
+/* applies only to elements that have a "box_1" id */
+#box_1 {
+  padding: 15px; /* try changing this to see what happens */
+  margin-bottom: 10px; /* try changing this to see what happens */
+}
+
+/* applies only to elements that have a "box_2" id */
+#box_2 {
+  padding: 5px; /* try changing this to see what happens */
+}
+
+/* applies only to elements that have a "box_1" id AND a "child" class */
+#box_1 .child {
+  background-color: #f00;
+  padding: 5px; /* try changing this to see what happens */
+}
+
+/* applies only to elements that have a "box_2" id AND a "child" class */
+#box_2 .child {
+  background-color: #00f;
+  padding: 10px; /* try changing this to see what happens */
+}
+
+/* applies only to elements that have a "box_1" id AND a "grandchild" class */
+#box_1 .grandchild {
+  padding: 5px; /* try changing this to see what happens */
+}
+
+/* applies only to elements that have a "box_2" id AND a "grandchild" class */
+#box_2 .grandchild {
+  padding: 5px; /* try changing this to see what happens */
+  border: #000 solid;
+  border-width: 10px; /* try changing this to see what happens */
+  position: relative;
+}
+
+/* applies only to images that are INSIDE elements that have a "box_2" id AND a "grandchild" class */
+#box_2 .grandchild img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
